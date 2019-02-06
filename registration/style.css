@@ -1,68 +1,81 @@
-* {
-    margin: 0px;
-    padding: 0px;
-}
-body {
-    font-size: 120%;
-    background: #F8F8FF;
+*, *::before, *::after {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
 }
 
-.header {
-    width: 30%;
-    margin: 50px auto 0px;
-    color: white;
-    background: #5F9EA0;
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: "Montserrat";
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/main_1.jpg");
+    background-size: cover;
+}
+
+.container {
+    background-color: transparent;
+    padding: 1em 1.5em;
+    border-radius: 25px;
+    border: 1px solid #fff;
     text-align: center;
-    border: 1px solid #B0C4DE;
-    border-bottom: none;
-    border-radius: 10px 10px 0px 0px;
-    padding: 20px;
+    /* box-shadow: 5px 10px #1991c9; */
 }
-form, .content {
-    width: 30%;
-    margin: 0px auto;
-    padding: 20px;
-    border: 1px solid #B0C4DE;
-    background: white;
-    border-radius: 0px 0px 10px 10px;
-}
+
 .input-group {
-    margin: 10px 0px 10px 0px;
+    padding: .2em;
 }
-.input-group label {
-    display: block;
-    text-align: left;
-    margin: 3px;
-}
-.input-group input {
-    height: 30px;
-    width: 93%;
-    padding: 5px 10px;
-    font-size: 16px;
-    border-radius: 5px;
-    border: 1px solid gray;
-}
-.btn {
-    padding: 10px;
-    font-size: 15px;
-    color: white;
-    background: #5F9EA0;
+
+button {
+    padding: .5em 1.4em;
+    background-color: #25aae7;
     border: none;
-    border-radius: 5px;
+    min-width: 250px;
+    text-transform: uppercase;
+    font-family: "Lobster";
+    letter-spacing: 3px;
+    font-size: 1em;
+    color: #fff;
+    transition: all 100ms ease-in-out;
+    margin-top: .5em;
 }
-.error {
-    width: 92%;
-    margin: 0px auto;
-    padding: 10px;
-    border: 1px solid #a94442;
-    color: #a94442;
-    background: #f2dede;
-    border-radius: 5px;
-    text-align: left;
+
+button:hover {
+    background-color: #fff;
+    color: #25aae7;
 }
-.success {
-    color: #3c763d;
-    background: #dff0d8;
-    border: 1px solid #3c763d;
-    margin-bottom: 20px;
+
+input {
+    padding: .5em;
+    min-width: 250px;
+    border: 1px solid #fff;
+    font-family: "Montserrat";
+}
+
+.reg-title {
+    font-family: "Lobster";
+    font-size: 36px;
+    letter-spacing: 4px;
+    color: #fff;
+    margin-bottom: .3em;
+}
+
+.member-info {
+    margin-top: 1em;
+    font-size: 14px;
+    color: #fff;
+}
+
+a {
+    color: #1991c9;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #fff;
 }
