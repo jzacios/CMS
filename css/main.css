@@ -79,7 +79,7 @@ body {
 
 .slide-2 .option-box i {
   font-size: 5rem;
-  text-shadow: 1px 1px 1px #3a3a3a;
+  text-shadow: 1px 1px 1_px #3a3a3a;
 }
 
 .slide-2 .option-box p {
