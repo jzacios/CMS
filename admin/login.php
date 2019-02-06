@@ -4,6 +4,7 @@
 <head>
     <title>Registration system PHP and MySQL</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="../scripts/login_check.js"></script>
 </head>
 <body>
 <div class="header">
@@ -14,7 +15,7 @@
     <?php include('errors.php'); ?>
     <div class="input-group">
         <label>Username</label>
-        <input type="text" name="username" >
+        <input type="text" name="username" onchange="username_check()" >
     </div>
     <div class="input-group">
         <label>Password</label>
