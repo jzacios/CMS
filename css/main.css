@@ -55,8 +55,8 @@ body {
 }
 
 .slide-2 {
-  background-color: #175CE8;
-  height: 25vh;
+  background-color: #52B9E8;
+  height: 23vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -79,6 +79,7 @@ body {
 
 .slide-2 .option-box i {
   font-size: 5rem;
+  text-shadow: 1px 1px 1px #3a3a3a;
 }
 
 .slide-2 .option-box p {
@@ -86,16 +87,16 @@ body {
   font-family: "Lobster";
   font-size: 1.4em;
   letter-spacing: 1.5px;
+  text-shadow: 2px 2px 2px #3a3a3a;
 }
 
 .slide-2 .option-box:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
 }
 
 .slide-3 {
-  background-color: #2A7BFF;
-  height: 75vh;
+  height: 77vh;
 }
 
 a {
