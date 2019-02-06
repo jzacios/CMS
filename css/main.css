@@ -1,9 +1,105 @@
 *, *::before, *::after {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html, body {
   height: 100%;
+}
+
+body {
+  font-family: 'Montserrat';
+  font-size: 20px;
+  color: #fff;
+}
+
+.slide-1 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("/images/main.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/images/main.jpg");
+  background-size: cover;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.slide-1 .article-box {
+  background-color: dark;
+  width: 50%;
+}
+
+.slide-1 .article-box h1 {
+  font-family: "Lobster";
+  font-size: 72px;
+  letter-spacing: 5px;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.slide-1 .article-box p {
+  margin-top: .3em;
+  margin-left: 2em;
+  font-family: "Indie Flower";
+  font-size: 28px;
+  line-height: 1em;
+  text-shadow: 4px 4px 4px #000000;
+}
+
+.slide-2 {
+  background-color: #175CE8;
+  height: 25vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.slide-2 .option-box {
+  display: inline-block;
+  margin: 0 4em;
+  text-align: center;
+  -webkit-transition: all 100ms ease-in-out;
+  transition: all 100ms ease-in-out;
+  cursor: pointer;
+}
+
+.slide-2 .option-box i {
+  font-size: 5rem;
+}
+
+.slide-2 .option-box p {
+  margin-top: .5em;
+  font-family: "Lobster";
+  font-size: 1.4em;
+  letter-spacing: 1.5px;
+}
+
+.slide-2 .option-box:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.slide-3 {
+  background-color: #2A7BFF;
+  height: 75vh;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
 }
 /*# sourceMappingURL=main.css.map */
