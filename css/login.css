@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #0CABE8;
+    height: 100%;
+    width: 100%;
+}
+.containter{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login_box{
+    width: 350px;
+    height: 200px;
+    background-color: #7B16FF;
+    border-radius: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login_box_content{
+    width: max-content;
+    height: max-content;
+    background-color: inherit;
+    padding-bottom: 20px;
+
+}
