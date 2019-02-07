@@ -100,6 +100,25 @@
         <section class="slide-4" id="slide-4">
             <div class="gallery-title">
                 <p>Photos</p>
+                <?php
+                session_start();
+                require_once('scripts/gallery_fetch_3rand.php');
+                /* $zdjecie1[0]    tytul
+                 * $zdjecie1[1]    zdjecie
+                 * $zdjecie1[2]    opis
+                 *
+                 * $zdjecie2[0]    tytul
+                 * $zdjecie2[1]    zdjecie
+                 * $zdjecie2[2]    opis
+                 *
+                 * $zdjecie3[0]    tytul
+                 * $zdjecie3[1]    zdjecie
+                 * $zdjecie3[2]    opis
+                 *
+                 *useless_shit/gallery/IMG_20120203_104647.jpg
+                 *
+                 */
+                ?>
             </div>
             <div class="gallery">
                 <div class="gallery-box">
