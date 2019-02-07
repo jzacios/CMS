@@ -105,25 +105,26 @@
                 ?>
             </div>
             <div class="gallery">
-                <div class="gallery-box">
-                    sad
+                <div class="gallery-box image-1">
+                    <img src="useless_shit/gallery/IMG_20190203_104647.jpg">
                     <div class="gallery-info">
-                        <div class="info-title"></div>
-                        <div class="info-desc"></div>
+                        <div class="info-title">
+                            <h1>Title</h1>
+                        </div>
+                        <div class="info-desc">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quo delectus aut minus laudantium vitae vero explicabo voluptas temporibus iusto!</p>
+                        </div>
                     </div>
                 </div>
-                <div class="gallery-box">
-                <img src="#" alt="photo">
+                <div class="gallery-box image-2">
+                    <img src="useless_shit/gallery/IMG_20190203_112303.jpg">
                     <div class="gallery-info">
-                        <div class="info-title"></div>
-                        <div class="info-desc"></div>
-                    </div>
-                </div>
-                <div class="gallery-box">
-                <img src="#" alt="photo">
-                    <div class="gallery-info">
-                        <div class="info-title"></div>
-                        <div class="info-desc"></div>
+                        <div class="info-title">
+                            <h1>Title</h1>
+                        </div>
+                        <div class="info-desc">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, voluptate dignissimos aut illo repudiandae sint nam tempora hic perspiciatis quae!</p>
+                        </div>
                     </div>
                 </div>
             </div>
