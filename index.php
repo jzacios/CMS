@@ -101,7 +101,6 @@
             <div class="gallery-title">
                 <p>Photos</p>
                 <?php
-                session_start();
                 require_once('scripts/gallery_fetch_3rand.php');
                 /* $zdjecie1[0]    tytul
                  * $zdjecie1[1]    zdjecie
