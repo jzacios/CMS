@@ -46,7 +46,7 @@ body {
         }
     }
     .option-box-1, .option-box-2, .option-box-3, .option-box-4 {
-        margin: 3.5em 2em;
+        margin: 3.5em 1.3em;
         text-align: center;
         min-width: 110px;
         height: 100px;
@@ -107,7 +107,6 @@ body {
     background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('../images/main_2.jpg');
     background-size: cover;
 
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) inset;
     display: flex;
     flex-direction: column;
 
@@ -123,6 +122,7 @@ body {
         font-family: "Lobster";
         font-size: 3rem;
         opacity: 1;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) inset;
     }
     .about-us > p {
         opacity: 1;
@@ -180,27 +180,49 @@ body {
         .box:hover {
             transform: scale(1.5);
             opacity: 1;
+            cursor: default;
+        }
+        .box-1 {
+            background-image: url("../images/poprawione/Hubert.png");
         }
         .box-2 {
             background-image: url("../images/XAWERY2.png");
         }
+        .box-3 {
+            background-image: url("../images/");
+        }
         .box-4 {
-            background-image: url("../images/Gabi2.png");
+            background-image: url("../images/poprawione/Gabi.png");
         }
         .box-5 {
-            background-image: url("../images/Ada_2.jpg");
+            background-image: url("../images/poprawione/Ada2.png");
         }
-        .box-5:hover, .box-2:hover {
+        .box-5:hover, .box-2:hover, .box-1:hover, .box-3:hover, .box-4:hover, .box-6:hover, .box-7:hover, 
+            .box-8:hover, .box-9:hover, .box-10:hover {
             background-size: 245%;
+        }
+        .box-6 {
+            background-image: url("../images/poprawione/Adi.png");
+        }
+        .box-7 {
+            background-image: url("../images/poprawione/");
+        }
+        .box-8 {
+            background-image: url("../images/poprawione/pawel.png");
+        }
+        .box-9 {
+            background-image: url("../images/poprawione/");
+        }
+        .box-10 {
+            background-image: url("../images/poprawione/");
         }
     }
 }
 .slide-4 {
     height: 100vh;
-    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('../images/main_4.jpg');
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../images/main_4.jpg');
     background-size: cover;
 
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) inset;
     display: flex;
     flex-direction: column;
 
@@ -210,12 +232,13 @@ body {
         align-items: center;
         width: 100%;
         height: 20vh;
-        background-color: rgb(115, 255, 0);
+        background-color: #73ff00;
         clip-path: polygon(0 0, 100% 0, 100% 62%, 0 78%);
         font-family: "Lobster";
         font-size: 4rem;
         opacity: 1;
         text-shadow: 2px 2px #111;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) inset;
     }
     .gallery-title p{
         margin-bottom: .7em;
@@ -267,12 +290,26 @@ body {
             justify-content: center;
             align-items: center;
 
+            button {
+                margin-top: 1em;
+                border: none;
+                padding: .5em 1.5em;
+                background-color: #efefef;
+                font-family: "Lobster";
+                transition: all 200ms ease-in-out;
+            }
+            button:hover {
+                background-color: #73ff00;
+                transform: scale(1.2);
+                color: #efefef;
+            }
 
             h1 {
                 text-align: center;
                 font-family: "Lobster";
                 letter-spacing: .1em;
                 text-shadow: 2px 2px #444;
+                color: #73ff00;
             }
 
             p {
@@ -306,7 +343,6 @@ body {
     background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('../images/main_5.jpg');
     background-size: cover;
 
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) inset;
     display: flex;
     flex-direction: column;
 
@@ -322,6 +358,7 @@ body {
         font-size: 4rem;
         opacity: 1;
         text-shadow: 2px 2px #111;
+        box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) inset;
     }
     .blog-title p{
         margin-bottom: .7em;

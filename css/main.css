@@ -56,7 +56,7 @@ body {
 }
 
 .slide-1 .option-box-1, .slide-1 .option-box-2, .slide-1 .option-box-3, .slide-1 .option-box-4 {
-  margin: 3.5em 2em;
+  margin: 3.5em 1.3em;
   text-align: center;
   min-width: 110px;
   height: 100px;
@@ -128,8 +128,6 @@ body {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../images/main_2.jpg");
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/main_2.jpg");
   background-size: cover;
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) inset;
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) inset;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -157,6 +155,8 @@ body {
   font-family: "Lobster";
   font-size: 3rem;
   opacity: 1;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) inset;
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) inset;
 }
 
 .slide-3 .about-us > p {
@@ -231,31 +231,59 @@ body {
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
   opacity: 1;
+  cursor: default;
+}
+
+.slide-3 .about-box .box-1 {
+  background-image: url("../images/poprawione/Hubert.png");
 }
 
 .slide-3 .about-box .box-2 {
   background-image: url("../images/XAWERY2.png");
 }
 
+.slide-3 .about-box .box-3 {
+  background-image: url("../images/");
+}
+
 .slide-3 .about-box .box-4 {
-  background-image: url("../images/Gabi2.png");
+  background-image: url("../images/poprawione/Gabi.png");
 }
 
 .slide-3 .about-box .box-5 {
-  background-image: url("../images/Ada_2.jpg");
+  background-image: url("../images/poprawione/Ada2.png");
 }
 
-.slide-3 .about-box .box-5:hover, .slide-3 .about-box .box-2:hover {
+.slide-3 .about-box .box-5:hover, .slide-3 .about-box .box-2:hover, .slide-3 .about-box .box-1:hover, .slide-3 .about-box .box-3:hover, .slide-3 .about-box .box-4:hover, .slide-3 .about-box .box-6:hover, .slide-3 .about-box .box-7:hover,
+.slide-3 .about-box .box-8:hover, .slide-3 .about-box .box-9:hover, .slide-3 .about-box .box-10:hover {
   background-size: 245%;
+}
+
+.slide-3 .about-box .box-6 {
+  background-image: url("../images/poprawione/Adi.png");
+}
+
+.slide-3 .about-box .box-7 {
+  background-image: url("../images/poprawione/");
+}
+
+.slide-3 .about-box .box-8 {
+  background-image: url("../images/poprawione/pawel.png");
+}
+
+.slide-3 .about-box .box-9 {
+  background-image: url("../images/poprawione/");
+}
+
+.slide-3 .about-box .box-10 {
+  background-image: url("../images/poprawione/");
 }
 
 .slide-4 {
   height: 100vh;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../images/main_4.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/main_4.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../images/main_4.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/main_4.jpg");
   background-size: cover;
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) inset;
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) inset;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -284,6 +312,8 @@ body {
   font-size: 4rem;
   opacity: 1;
   text-shadow: 2px 2px #111;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) inset;
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) inset;
 }
 
 .slide-4 .gallery-title p {
@@ -358,11 +388,29 @@ body {
           align-items: center;
 }
 
+.slide-4 .gallery-box .gallery-info button {
+  margin-top: 1em;
+  border: none;
+  padding: .5em 1.5em;
+  background-color: #efefef;
+  font-family: "Lobster";
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+.slide-4 .gallery-box .gallery-info button:hover {
+  background-color: #73ff00;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  color: #efefef;
+}
+
 .slide-4 .gallery-box .gallery-info h1 {
   text-align: center;
   font-family: "Lobster";
   letter-spacing: .1em;
   text-shadow: 2px 2px #444;
+  color: #73ff00;
 }
 
 .slide-4 .gallery-box .gallery-info p {
@@ -388,8 +436,6 @@ body {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../images/main_5.jpg");
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/main_5.jpg");
   background-size: cover;
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) inset;
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) inset;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -418,6 +464,8 @@ body {
   font-size: 4rem;
   opacity: 1;
   text-shadow: 2px 2px #111;
+  -webkit-box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) inset;
+          box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) inset;
 }
 
 .slide-5 .blog-title p {

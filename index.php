@@ -92,7 +92,7 @@
                 <div class="box box-9">
                     <h1>Przemek</h1>
                 </div>
-                <div class="box">
+                <div class="box box-10">
                     <h1>Szymon</h1>
                 </div>
             </div>
@@ -114,6 +114,7 @@
                         <div class="info-desc">
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quo delectus aut minus laudantium vitae vero explicabo voluptas temporibus iusto!</p>
                         </div>
+                        <button class="see-more-btn">See more..</button>
                     </div>
                 </div>
                 <div class="gallery-box image-2">
@@ -125,6 +126,7 @@
                         <div class="info-desc">
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, voluptate dignissimos aut illo repudiandae sint nam tempora hic perspiciatis quae!</p>
                         </div>
+                        <button class="see-more-btn">See more..</button>
                     </div>
                 </div>
             </div>
