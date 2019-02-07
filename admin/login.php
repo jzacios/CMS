@@ -14,7 +14,7 @@
             <form method="post" action="login.php">
                 <?php include('errors.php'); ?>
                 <div class="input-group">
-                    <input type="text" name="username" onchange="username_check()" placeholder="Enter your username">
+                    <input type="text" name="username"  placeholder="Enter your username">
                 </div>
                 <div class="input-group">
                     <input type="password" name="password" placeholder="Enter password">
