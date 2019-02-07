@@ -11,9 +11,9 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     </head>
     <body>
-        <section class="slide-1">
+        <section class="slide-1" id="slide-1">
             <div class="article-box">
-                <h1 class="title">SevillaEyes</h1>
+                <h1 class="title"><span style="color: #00aeff">Sevilla</span>Eyes</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quos assumenda quidem ipsum ipsam eum sapiente aperiam fuga. A, quisquam.</p>
             </div>   
             <a href="#slide-3">
@@ -22,7 +22,7 @@
                     <p>About us</p>
                 </div>
             </a>
-            <a href="">
+            <a href="#slide-4">
                 <div class="option-box-2">
                     <i class="fas fa-camera"></i>
                     <p>Photos</p>
@@ -33,7 +33,12 @@
                     <i class="fas fa-blog"></i>
                     <p>Blog</p>
                 </div>
-            </a>      
+            </a> 
+            <a href="#slide-1">
+                <div class="option-box-4">
+                    <i class="fas fa-angle-up"></i>
+                </div>
+            </a>       
         </section>
         <!-- <section class="slide-2">
             <a href="#slide-3">
@@ -62,43 +67,33 @@
             <div class="about-box">
                 <div class="box">
                     <h1>Hubert</h1>
-                    <p>Lorem ipsum dolor sit amet.</p>
                 </div>
                 <div class="box">
                     <h1>Ksawery</h1>
-                    <p>Lorem ipsum dolor sit amet.</p>
                 </div>
                 <div class="box">
                     <h1>Jakub</h1>
-                    <p>Lorem ipsum dolor sit amet.</p>
                 </div>
                 <div class="box">
-                    <h1>Gabrysia</h1>
-                    <p>Lorem ipsum dolor sit amet </p>
+                    <h1>Gabi</h1>
                 </div>
                 <div class="box">
                     <h1>Ada</h1>
-                    <p>Lorem ipsum dolor sit amet.</p>
                 </div>
                 <div class="box">
                     <h1>Adrian</h1>
-                    <p>Lorem ipsum dolor sit amet.</p>
                 </div>
                 <div class="box">
                     <h1>Daniel</h1>
-                    <p>Lorem ipsum dolor sit amet.</p>
                 </div>
                 <div class="box">
                     <h1>Paweł</h1>
-                    <p>Lorem ipsum dolor sit amet.</p>
                 </div>
                 <div class="box">
                     <h1>Przemek</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
                 <div class="box">
                     <h1>Szymon</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
             </div>
         </section>
