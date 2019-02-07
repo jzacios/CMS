@@ -5,12 +5,12 @@ $stmt = $pdo->prepare("SELECT count(id) FROM posts");
 $stmt->execute();
 $liczba = $stmt->fetch();
 $maks = $liczba[0];
-$ktore = [0,0,0];
+$ktore = [0,0];
 $switch = true;
-for($i=0;$i<=2;$i++) {
+for($i=0;$i<=1;$i++) {
     while ($switch) {
         $holder = rand(1, $maks);
-        if ($ktore[0] != $holder AND $ktore[1] != $holder AND $ktore[2] != $holder) {
+        if ($ktore[0] != $holder AND $ktore[1] != $holder) {
             $ktore[$i] = $holder;
             $switch = false;
         }
@@ -26,6 +26,3 @@ $stmt2 = $pdo->prepare("Select title,photo,content FROM posts WHERE id = ?");
 $stmt2->execute([$ktore[1]]);
 $zdjecie2 = $stmt2->fetch();
 
-$stmt3 = $pdo->prepare("Select title,photo,content FROM posts WHERE id = ?");
-$stmt3->execute([$ktore[2]]);
-$zdjecie3 = $stmt3->fetch();
