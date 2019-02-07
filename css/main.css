@@ -19,7 +19,9 @@ body {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../images/main.jpg");
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/main.jpg");
   background-size: cover;
+  background-attachment: fixed;
   height: 100vh;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -29,8 +31,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .slide-1 .article-box {
@@ -46,16 +46,21 @@ body {
 
 .slide-1 .article-box p {
   margin-top: .3em;
-  margin-left: 2em;
+  margin-left: 1em;
   font-family: "Indie Flower";
   font-size: 28px;
   line-height: 1em;
   text-shadow: 4px 4px 4px #000000;
 }
 
-.slide-2 {
-  background-color: #52B9E8;
-  height: 23vh;
+.slide-1 .option-box-1, .slide-1 .option-box-2, .slide-1 .option-box-3 {
+  margin: 2em 2em;
+  text-align: center;
+  min-width: 110px;
+  width: 100px;
+  height: 100px;
+  z-index: 999;
+  padding: .5em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -65,37 +70,200 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  position: fixed;
+  right: 0;
+  top: 0;
 }
 
-.slide-2 .option-box {
-  display: inline-block;
-  margin: 0 4em;
-  text-align: center;
-  -webkit-transition: all 100ms ease-in-out;
-  transition: all 100ms ease-in-out;
-  cursor: pointer;
-}
-
-.slide-2 .option-box i {
-  font-size: 5rem;
+.slide-1 .option-box-1 i, .slide-1 .option-box-2 i, .slide-1 .option-box-3 i {
+  font-size: 2rem;
   text-shadow: 1px 1px 1_px #3a3a3a;
 }
 
-.slide-2 .option-box p {
-  margin-top: .5em;
+.slide-1 .option-box-1 p, .slide-1 .option-box-2 p, .slide-1 .option-box-3 p {
+  margin-top: .2em;
   font-family: "Lobster";
-  font-size: 1.4em;
+  font-size: 1em;
   letter-spacing: 1.5px;
   text-shadow: 2px 2px 2px #3a3a3a;
 }
 
-.slide-2 .option-box:hover {
+.slide-1 .option-box-1 {
+  top: 10vh;
+}
+
+.slide-1 .option-box-2 {
+  top: 30vh;
+}
+
+.slide-1 .option-box-3 {
+  top: 50vh;
+}
+
+.slide-1 .option-box-1:hover, .slide-1 .option-box-2:hover, .slide-1 .option-box-3:hover {
   -webkit-transform: scale(1.15);
           transform: scale(1.15);
 }
 
 .slide-3 {
-  height: 77vh;
+  height: 100vh;
+  background: url("../images/main_2.jpg");
+  background-size: cover;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) inset;
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) inset;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.slide-3 .about-us {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: -2em;
+  width: 100%;
+  height: 20%;
+  background-color: #111;
+  -webkit-clip-path: polygon(0 10%, 100% 0, 100% 95%, 0 82%);
+          clip-path: polygon(0 10%, 100% 0, 100% 95%, 0 82%);
+  font-family: "Lobster";
+  font-size: 3rem;
+  opacity: 1;
+}
+
+.slide-3 .about-us > p {
+  opacity: 1;
+}
+
+.slide-3 .about-box {
+  width: 75%;
+  margin: 4em auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  text-align: center;
+}
+
+.slide-3 .about-box .box {
+  margin: 1.1em 0;
+  width: 8em;
+  padding: .5em;
+  height: 8em;
+  border-radius: 50%;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  background: url("../images/main_3.jpg");
+  opacity: .9;
+  background-position: center;
+  background-size: cover;
+  border: 1.2px solid #111;
+  justify-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.slide-3 .about-box .box h1 {
+  font-size: 24px;
+  font-family: "Lobster";
+  letter-spacing: .1em;
+  color: #111;
+}
+
+.slide-3 .about-box .box p {
+  font-size: 10px;
+  display: none;
+}
+
+.slide-3 .about-box .box > h1 {
+  text-align: center;
+}
+
+.slide-3 .about-box .box > p {
+  text-align: center;
+}
+
+.slide-3 .about-box .box:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.1))), url("../images/main_3.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../images/main_3.jpg");
+  background-position: center;
+  background-size: cover;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  opacity: 1;
+}
+
+.slide-3 .about-box .box:hover h1 {
+  display: none;
+}
+
+.slide-3 .about-box .box:hover p {
+  display: initial;
+}
+
+.slide-4 {
+  height: 100vh;
+  background: url("../images/main_4.jpg");
+  background-size: cover;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) inset;
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) inset;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.slide-4 .gallery-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 25%;
+  background-color: #111;
+  -webkit-clip-path: polygon(0 13%, 100% 22%, 100% 71%, 0 90%);
+          clip-path: polygon(0 13%, 100% 22%, 100% 71%, 0 90%);
+  font-family: "Lobster";
+  font-size: 2rem;
+  opacity: 1;
+  margin-top: -1.2em;
 }
 
 a {
