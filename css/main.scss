@@ -247,6 +247,14 @@ body {
     .blog-title p{
         margin-bottom: .7em;
     }
+
+    .gallery-box {
+        width: 30%;
+        height: 600px;
+        background-color: red;
+        display: inline-block;
+        border: 1px solid #fff;
+    }
 }
 
 a {

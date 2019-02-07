@@ -101,33 +101,30 @@
             <div class="gallery-title">
                 <p>Photos</p>
                 <?php
-                // require_once('scripts/gallery_fetch_3rand.php');
-                /* $zdjecie1[0]    tytul
-                 * $zdjecie1[1]    zdjecie
-                 * $zdjecie1[2]    opis
-                 *
-                 * $zdjecie2[0]    tytul
-                 * $zdjecie2[1]    zdjecie
-                 * $zdjecie2[2]    opis
-                 *
-                 * $zdjecie3[0]    tytul
-                 * $zdjecie3[1]    zdjecie
-                 * $zdjecie3[2]    opis
-                 *
-                 *useless_shit/gallery/IMG_20120203_104647.jpg
-                 *
-                 */
+                require_once('scripts/gallery_fetch_3rand.php');
                 ?>
             </div>
             <div class="gallery">
                 <div class="gallery-box">
-                    
+                    sad
+                    <div class="gallery-info">
+                        <div class="info-title"></div>
+                        <div class="info-desc"></div>
+                    </div>
                 </div>
                 <div class="gallery-box">
-                    
+                <img src="#" alt="photo">
+                    <div class="gallery-info">
+                        <div class="info-title"></div>
+                        <div class="info-desc"></div>
+                    </div>
                 </div>
                 <div class="gallery-box">
-                    
+                <img src="#" alt="photo">
+                    <div class="gallery-info">
+                        <div class="info-title"></div>
+                        <div class="info-desc"></div>
+                    </div>
                 </div>
             </div>
         </section>
