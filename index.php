@@ -101,7 +101,7 @@
             <div class="gallery-title">
                 <p>Photos</p>
                 <?php
-                require_once('scripts/gallery_fetch_3rand.php');
+                // require_once('scripts/gallery_fetch_3rand.php');
                 /* $zdjecie1[0]    tytul
                  * $zdjecie1[1]    zdjecie
                  * $zdjecie1[2]    opis
