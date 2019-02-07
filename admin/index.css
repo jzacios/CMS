@@ -1,0 +1,93 @@
+*, *::before, *::after {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-image: url("../useless_shit/gallery/IMG_20190203_122729.jpg");
+    background-size: cover;
+    color: #fff;
+    font-family: "Montserrat";
+
+    display: grid;
+    align-items: center;
+}
+
+form p {
+    margin-top: .8em;
+}
+
+.content {
+    width: 35%;
+    padding: 1em;
+    margin: 0 auto;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+}
+
+button {
+    padding: .5em 1.4em;
+    background-color: #25aae7;
+    border: none;
+    min-width: 370px;
+    text-transform: uppercase;
+    font-family: "Lobster";
+    letter-spacing: 3px;
+    font-size: 1em;
+    color: #fff;
+    transition: all 100ms ease-in-out;
+    margin-top: .5em;
+    cursor: pointer;
+}
+
+button:hover, a:hover {
+    background-color: #fff;
+    color: #25aae7;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    padding: .5em 1.4em;
+    background-color: #25aae7;
+    min-width: 370px;
+    text-align: center;
+    font-family: "Lobster";
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 1em;
+    color: #fff;
+    transition: all 100ms ease-in-out;
+    margin-top: .5em;
+}
+
+h1 {
+    text-align: center;
+    font-family: "Lobster";
+    letter-spacing: 2px;
+    font-size: 36px;
+    color: #fff ;
+}
+
+p {
+    margin: .1em 0;
+    font-size: 18px;   
+}
+
+input {
+    width: 370px;
+    padding: .3em;
+}
+
+a {
+   
+}
