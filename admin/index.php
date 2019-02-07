@@ -36,7 +36,15 @@ if (isset($_GET['logout'])) {
     <!-- logged in user information -->
     <?php  if (isset($_SESSION['username'])) : ?>
         <a href="posty.php">Lista postow</a><br>
-        <a href="add_post.php">Dodaj post</a><br>
+<!--    dodawanie do galerii-->
+        <form method="post" action="../scripts/gallery_add.php">
+            Dodaj post do galerii <br>
+            tytul <input type="text" name="tytul">
+            sciezka <input type="text" name="sciezka">
+            opis <textarea rows="4" cols="50" name="opis"></textarea>
+            <input type="submit">
+        </form>
+<!--    dodawanie do galerii-->
         <a href="galeria.php">Galeria</a>
     <?php endif ?>
 </div>
