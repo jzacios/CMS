@@ -21,22 +21,11 @@ for($i=0;$i<=2;$i++) {
 $stmt1 = $pdo->prepare("Select title,photo,content FROM posts WHERE id = ?");
 $stmt1->execute([$ktore[0]]);
 $zdjecie1 = $stmt1->fetch();
-echo $zdjecie1[0]." ";
-echo $zdjecie1[1]." ";
-echo $zdjecie1[2]." ";
 
 $stmt2 = $pdo->prepare("Select title,photo,content FROM posts WHERE id = ?");
 $stmt2->execute([$ktore[1]]);
 $zdjecie2 = $stmt2->fetch();
-echo ("<br>");
-echo $zdjecie2[0]." ";
-echo $zdjecie2[1]." ";
-echo $zdjecie2[2]." ";
 
 $stmt3 = $pdo->prepare("Select title,photo,content FROM posts WHERE id = ?");
 $stmt3->execute([$ktore[2]]);
 $zdjecie3 = $stmt3->fetch();
-echo ("<br>");
-echo $zdjecie3[0]." ";
-echo $zdjecie3[1]." ";
-echo $zdjecie3[2];
