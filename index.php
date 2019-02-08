@@ -106,25 +106,25 @@
             </div>
             <div class="gallery">
                 <div class="gallery-box image-1">
-                    <img src="useless_shit/gallery/IMG_20190203_104647.jpg">
+                    <?php echo($img1) ?>
                     <div class="gallery-info">
                         <div class="info-title">
-                            <h1>Title</h1>
+                            <?php echo($title1) ?>
                         </div>
                         <div class="info-desc">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quo delectus aut minus laudantium vitae vero explicabo voluptas temporibus iusto!</p>
+                            <?php echo($opis1) ?>
                         </div>
                         <button class="see-more-btn">See more..</button>
                     </div>
                 </div>
                 <div class="gallery-box image-2">
-                    <img src="useless_shit/gallery/IMG_20190203_112303.jpg">
+                    <?php echo($img2) ?>
                     <div class="gallery-info">
                         <div class="info-title">
-                            <h1>Title</h1>
+                            <?php echo($title2) ?>
                         </div>
                         <div class="info-desc">
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, voluptate dignissimos aut illo repudiandae sint nam tempora hic perspiciatis quae!</p>
+                            <?php echo($opis2) ?>
                         </div>
                         <button class="see-more-btn">See more..</button>
                     </div>
